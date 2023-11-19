@@ -32,6 +32,7 @@
         "loony-tools:pr9m4BkM/5/eSTZlkQyRt57Jz7OMBxNSUiMC4FkcNfk="
       ];
       trusted-users = ["@admin"];
+      auto-optimise-store = lib.mkForce false;
     };
     linux-builder = {
       enable = true;
