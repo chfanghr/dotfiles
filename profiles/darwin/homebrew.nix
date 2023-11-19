@@ -49,9 +49,6 @@
       "google-chrome"
       "notion"
       "grammarly-desktop"
-      # TODO: is this really needed? `programs.gnupgg-agent` seems to come with
-      # full gpg smart card support already .
-      # "gpg-suite-no-mail"
       "orbstack"
       # NOTE: use home-manager
       # "kitty"
