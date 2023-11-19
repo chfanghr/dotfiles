@@ -10,6 +10,7 @@
     coreutils
     file
     zellij
+    gnupg
   ];
 
   programs = {
