@@ -6,6 +6,7 @@
     ./hostName.nix
     ./homebrew.nix
     ./home-manager.nix
+    ./tools.nix
   ];
 
   system.stateVersion = 4;
