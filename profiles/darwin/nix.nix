@@ -38,4 +38,6 @@
       enable = true;
     };
   };
+
+  imports = [ ./generate-nix-cache-key.nix ];
 }
