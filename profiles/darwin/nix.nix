@@ -39,5 +39,5 @@
     };
   };
 
-  imports = [ ./generate-nix-cache-key.nix ];
+  imports = [./generate-nix-cache-key.nix];
 }

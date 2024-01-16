@@ -4,13 +4,13 @@
     rsync
     cachix
     helix
-    btop
     htop
     neofetch
     coreutils
     file
     zellij
     gnupg
+    glances
   ];
 
   programs = {

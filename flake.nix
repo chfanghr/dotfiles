@@ -2,11 +2,10 @@
   description = "Hongrui Fang's machine configurations";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/staging-23.11";
+    nixpkgs.follows = "nix-darwin/nixpkgs";
 
     nix-darwin = {
       url = "github:LnL7/nix-darwin/master";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {

@@ -40,9 +40,7 @@
     },
     "nix-darwin": {
       "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
         "lastModified": 1699867978,
@@ -61,18 +59,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1700371038,
-        "narHash": "sha256-K2P95tHsY8n8bFzv7xObepVbJKjdfPM8LJs9+4/P1NA=",
+        "lastModified": 1705303754,
+        "narHash": "sha256-loWkd7lUzSvGBU9xnva37iPB2rr5ulq1qBLT44KjzGA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ff562fa5fc91523e2222ee5dc4600162a775eddb",
+        "rev": "e0629618b4b419a47e2c8a3cab223e2a7f3a8f97",
         "type": "github"
       },
       "original": {
-        "owner": "NixOS",
-        "ref": "staging-23.11",
-        "repo": "nixpkgs",
-        "type": "github"
+        "id": "nixpkgs",
+        "type": "indirect"
       }
     },
     "nixpkgs-lib": {
@@ -98,7 +94,10 @@
         "flake-parts": "flake-parts",
         "home-manager": "home-manager",
         "nix-darwin": "nix-darwin",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": [
+          "nix-darwin",
+          "nixpkgs"
+        ]
       }
     }
   },
