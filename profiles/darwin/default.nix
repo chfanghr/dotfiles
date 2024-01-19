@@ -9,5 +9,7 @@
     ./tools.nix
   ];
 
+  security.pam.enableSudoTouchIdAuth = true;
+
   system.stateVersion = 4;
 }
