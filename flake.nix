@@ -14,6 +14,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    pre-commit-hooks = {
+      url = "github:cachix/pre-commit-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     flake-parts.url = "github:hercules-ci/flake-parts";
 
     mac-home = {
@@ -34,8 +39,18 @@
         "aarch64-linux"
       ];
       imports = [
+        inputs.pre-commit-hooks.flakeModule
         ./hosts
       ];
-      perSystem = {};
+      perSystem = {config, ...}: {
+        pre-commit = {
+          check.enable = true;
+          settings.hooks = {
+            alejandra.enable = true;
+            deadnix.enable = true;
+          };
+        };
+        devShells.default = config.pre-commit.devShell;
+      };
     };
 }
