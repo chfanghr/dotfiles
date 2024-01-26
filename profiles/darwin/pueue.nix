@@ -16,7 +16,20 @@ in {
 
     settings = mkOption {
       type = yamlFormat.type;
-      default = {};
+      default = {
+        client = {};
+        daemon = {
+          pause_group_on_failure = false;
+          pause_all_on_failure = false;
+          callback_log_lines = 10;
+        };
+        shared = {
+          use_unix_socket = true;
+          host = "127.0.0.1";
+          port = "6924";
+        };
+        profiles = {};
+      };
       example = literalExpression ''
         {
           daemon = {

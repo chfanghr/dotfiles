@@ -7,6 +7,7 @@
     ./homebrew.nix
     ./home-manager.nix
     ./tools.nix
+    ./pueue.nix
   ];
 
   security.pam.enableSudoTouchIdAuth = true;
