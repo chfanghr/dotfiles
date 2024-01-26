@@ -42,7 +42,11 @@
         inputs.pre-commit-hooks.flakeModule
         ./hosts
       ];
-      perSystem = {config, ...}: {
+      perSystem = {
+        config,
+        pkgs,
+        ...
+      }: {
         pre-commit = {
           check.enable = true;
           settings.hooks = {
@@ -50,7 +54,9 @@
             deadnix.enable = true;
           };
         };
-        devShells.default = config.pre-commit.devShell;
+        devShells.default = config.pre-commit.devShell.overrideAttrs (_: prev: {
+          buildInputs = prev.buildInputs ++ [pkgs.nil];
+        });
       };
     };
 }
