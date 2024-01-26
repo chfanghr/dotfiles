@@ -2,10 +2,11 @@
   description = "Hongrui Fang's machine configurations";
 
   inputs = {
-    nixpkgs.follows = "nix-darwin/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
 
     nix-darwin = {
       url = "github:LnL7/nix-darwin/master";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     home-manager = {
@@ -14,6 +15,14 @@
     };
 
     flake-parts.url = "github:hercules-ci/flake-parts";
+
+    mac-home = {
+      url = "github:chfanghr/fanghr-bruh";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        home-manager.follows = "home-manager";
+      };
+    };
   };
 
   outputs = {flake-parts, ...} @ inputs:
