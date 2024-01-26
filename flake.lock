@@ -323,11 +323,11 @@
         "zsh-you-should-use": "zsh-you-should-use"
       },
       "locked": {
-        "lastModified": 1706279441,
-        "narHash": "sha256-pAGquSwWjaW8PL0kql3TnbYgIJLM6HLu9OHhPADgoMA=",
+        "lastModified": 1706280658,
+        "narHash": "sha256-mHe/KvXodCXax34jSS3ANOPJr7sFsB/FblvBJHQK+3k=",
         "owner": "chfanghr",
         "repo": "fanghr-bruh",
-        "rev": "648316594d97ca0fdacd38ced7e7f6471d5cabe9",
+        "rev": "ae3c6c23a86ff84e2875a0e270a625a653b0fba7",
         "type": "github"
       },
       "original": {
