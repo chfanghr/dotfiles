@@ -22,7 +22,7 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
 
     mac-home = {
-      url = "github:chfanghr/fanghr-bruh";
+      url = "github:chfanghr/mac-home";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         home-manager.follows = "home-manager";
