@@ -378,11 +378,11 @@
         "zsh-you-should-use": "zsh-you-should-use"
       },
       "locked": {
-        "lastModified": 1706422494,
-        "narHash": "sha256-FuxY+ZZjfZIZPDIzD5dHBrpVDv3NbE3KFVjEg1IBuMo=",
+        "lastModified": 1706422475,
+        "narHash": "sha256-4PuMkQo1mN4ozsYvKuV5dSKZI6tFzk5OMq/k5GIDS9U=",
         "owner": "chfanghr",
         "repo": "mac-home",
-        "rev": "03655342f9aa37ef2f37f92b239e1cdc12cafd1b",
+        "rev": "81b83522127e38aace936c8e6abde91d677b108f",
         "type": "github"
       },
       "original": {
