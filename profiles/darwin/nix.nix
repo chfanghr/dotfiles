@@ -26,7 +26,7 @@
         ["x86_64-darwin"]
         ++ optional isAppleSilicon "aarch-64-darwin";
       substituters = [
-        "https://cache.zw3rk.com"
+        # "https://cache.zw3rk.com"
       ];
       trusted-public-keys = [
         "loony-tools:pr9m4BkM/5/eSTZlkQyRt57Jz7OMBxNSUiMC4FkcNfk="
