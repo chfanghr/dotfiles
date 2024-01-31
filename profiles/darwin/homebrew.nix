@@ -61,6 +61,7 @@
       "vlc"
       "obs"
       "keycastr"
+      "xnviewmp"
     ];
   };
 }
