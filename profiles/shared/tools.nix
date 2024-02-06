@@ -11,6 +11,7 @@
     zellij
     gnupg
     glances
+    sshping
   ];
 
   programs = {

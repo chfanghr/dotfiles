@@ -25,5 +25,8 @@
     home.file."Library/Application Support/pueue/pueue.yml".source = pueueConfigFile;
     imports = [specialArgs.inputs.mac-home.outputs.homeModules.fanghr];
   };
-  nixpkgs.overlays = [specialArgs.inputs.mac-home.outputs.overlays.default];
+  nixpkgs.overlays = [
+    specialArgs.inputs.mac-home.outputs.overlays.default
+    (import ../../pkgs).overlay
+  ];
 }

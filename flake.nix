@@ -42,6 +42,7 @@
         inputs.pre-commit-hooks.flakeModule
         ./hosts
       ];
+
       perSystem = {
         config,
         pkgs,
