@@ -713,11 +713,11 @@
         "zsh-you-should-use": "zsh-you-should-use"
       },
       "locked": {
-        "lastModified": 1714145974,
-        "narHash": "sha256-ZZZMnMAv5ab7LA3an9tQZdw9EM0DF4XyzgDHVzrwj5k=",
+        "lastModified": 1714642368,
+        "narHash": "sha256-jAxoCha23gfigP49bA/hZPfkLJliTPf4V9giDYYT5FM=",
         "owner": "chfanghr",
         "repo": "mac-home",
-        "rev": "423611515c80ad75171c33bf4c2951fdb24ad099",
+        "rev": "3c5d8e6229850d9d42f46f23ab05aa19dac8cd1d",
         "type": "github"
       },
       "original": {
