@@ -62,6 +62,7 @@
       "obs"
       "keycastr"
       "xnviewmp"
+      "iterm2"
     ];
   };
 }
