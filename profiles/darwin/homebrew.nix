@@ -43,6 +43,7 @@
       # "game-porting-toolkit"
       "game-porting-toolkit-compiler"
       "openjdk@17"
+      "podman"
     ];
     casks = [
       "spotify"

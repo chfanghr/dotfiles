@@ -36,6 +36,19 @@
     };
     linux-builder = {
       enable = true;
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+      ];
+      supportedFeatures = [
+        "kvm"
+        "nixos-test"
+        "apple-virt"
+        "benchmark"
+        "big-parallel"
+        "ca-derivations"
+        "recursive-nix"
+      ];
     };
   };
 
