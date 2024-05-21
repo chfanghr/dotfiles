@@ -2,7 +2,10 @@
   lib,
   config,
   ...
-}: {
+}: let
+  inherit (lib.lists) optional;
+  isAppleSilicon = config.darwin.isAppleSilicon;
+in {
   services.nix-daemon.enable = true;
 
   nix = {
@@ -19,10 +22,7 @@
         "/private/var/tmp"
         "/usr/bin/env"
       ];
-      extra-platforms = let
-        inherit (lib.lists) optional;
-        isAppleSilicon = config.darwin.isAppleSilicon;
-      in
+      extra-platforms =
         ["x86_64-darwin"]
         ++ optional isAppleSilicon "aarch-64-darwin";
       substituters = [
