@@ -36,10 +36,11 @@
     };
     linux-builder = {
       enable = true;
-      systems = [
-        "x86_64-linux"
-        "aarch64-linux"
-      ];
+      systems =
+        [
+          "x86_64-linux"
+        ]
+        ++ optional isAppleSilicon "aarch64-linux";
       supportedFeatures = [
         "kvm"
         "nixos-test"
