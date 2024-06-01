@@ -42,7 +42,6 @@ in {
         ]
         ++ optional isAppleSilicon "aarch64-linux";
       supportedFeatures = [
-        "kvm"
         "nixos-test"
         "apple-virt"
         "benchmark"
