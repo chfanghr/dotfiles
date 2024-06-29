@@ -64,6 +64,7 @@
       "keycastr"
       "xnviewmp"
       "iterm2"
+      "imhex"
     ];
   };
 }
