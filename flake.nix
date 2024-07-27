@@ -26,6 +26,7 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         home-manager.follows = "home-manager";
+        nvim.url = "github:chfanghr/nvim";
       };
     };
   };

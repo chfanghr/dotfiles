@@ -21,11 +21,10 @@
       # QOL
       Magnet = 441258766;
       Discovery = 1381004916;
-      Tailscale = 1475387142;
       "Raivo OTP" = 1498497896;
       # Music
       "Pine Player" = 1112075769;
-      LyricsX = 1254743014;
+      # LyricsX = 1254743014;
       # Safari Plugins
       Tampermonkey = 1482490089;
       "AdGuard for Safari" = 1440147259;
@@ -41,7 +40,7 @@
     brews = [
       # FIXME: requires arch -x86_64 wrapper
       # "game-porting-toolkit"
-      "game-porting-toolkit-compiler"
+      # "game-porting-toolkit-compiler"
       "openjdk@17"
       "podman"
     ];
@@ -65,6 +64,10 @@
       "xnviewmp"
       "iterm2"
       "imhex"
+      "telegram"
+      "signal"
+      "zulip"
+      "tailscale"
     ];
   };
 }
